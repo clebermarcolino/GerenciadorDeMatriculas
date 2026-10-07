@@ -1,0 +1,555 @@
+{
+  "curriculo": "0722009",
+  "fonte": "Prerreq.pdf (cadeias I a VI); Fluxograma_SI.pdf (optativas e equivalências); nomes, períodos e CH dos obrigatórios extraídos de um histórico SIGAA",
+  "disciplinas": [
+    {
+      "codigo": "8101105",
+      "nome": "INTRODUCAO A SOCIOLOGIA",
+      "periodo": 1,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8101306",
+      "nome": "METODOLOGIA CIENTÍFICA",
+      "periodo": 1,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8103104",
+      "nome": "INTRODUCAO A PROGRAMACAO",
+      "periodo": 1,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8103106",
+      "nome": "INTRODUCAO AO COMPUTADOR",
+      "periodo": 1,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8103108",
+      "nome": "MATEMÁTICA ELEMENTAR",
+      "periodo": 1,
+      "ch": null,
+      "tipo": "OB",
+      "legado": true,
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8108108",
+      "nome": "ADMINISTRAÇÃO I",
+      "periodo": 1,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "DCET00233",
+      "nome": "MATEMÁTICA DISCRETA",
+      "periodo": 1,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8101104",
+      "nome": "INTRODUCAO A FILOSOFIA",
+      "periodo": 2,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8103125",
+      "nome": "LINGUAGEM DE PROGRAMACAO",
+      "periodo": 2,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103104"
+      ]
+    },
+    {
+      "codigo": "8103126",
+      "nome": "ARQUITETURA DE COMPUTADORES I",
+      "periodo": 2,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103106"
+      ]
+    },
+    {
+      "codigo": "8103139",
+      "nome": "LOGICA APLICADA A COMPUTACAO",
+      "periodo": 2,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103108"
+      ]
+    },
+    {
+      "codigo": "8103140",
+      "nome": "CÁLCULO DIFERENCIAL E INTEGRAL",
+      "periodo": 2,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8108109",
+      "nome": "ADMINISTRAÇÃO II",
+      "periodo": 2,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8108108"
+      ]
+    },
+    {
+      "codigo": "8103138",
+      "nome": "PROGRAMACAO ORIENTADA A OBJETOS",
+      "periodo": 3,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103125"
+      ]
+    },
+    {
+      "codigo": "8103141",
+      "nome": "ALGORITMOS E ESTRUTURA DE DADOS I",
+      "periodo": 3,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103125"
+      ]
+    },
+    {
+      "codigo": "8103144",
+      "nome": "ALGEBRA LINEAR E GEOMETRIA ANALITICA",
+      "periodo": 3,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103140"
+      ]
+    },
+    {
+      "codigo": "8103147",
+      "nome": "PROBABILIDADE E ESTATISTICA",
+      "periodo": 3,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103140"
+      ]
+    },
+    {
+      "codigo": "8101177",
+      "nome": "INTRODUCAO A PSICOLOGIA",
+      "periodo": 4,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8103146",
+      "nome": "ALGORITMOS E ESTRUTURA DE DADOS II",
+      "periodo": 4,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103141"
+      ]
+    },
+    {
+      "codigo": "8103151",
+      "nome": "ENGENHARIA DE SOFTWARE",
+      "periodo": 4,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103125"
+      ]
+    },
+    {
+      "codigo": "8103154",
+      "nome": "PARADIGMAS DE LINGUAGEM",
+      "periodo": 4,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103125"
+      ]
+    },
+    {
+      "codigo": "8108113",
+      "nome": "EMPREENDEDORISMO",
+      "periodo": 4,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8101231",
+      "nome": "ÉTICA PROFISSIONAL",
+      "periodo": 5,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8103145",
+      "nome": "PESQUISA APLIC A SISTEMAS DE INFORMACAO",
+      "periodo": 5,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8101306"
+      ]
+    },
+    {
+      "codigo": "8103148",
+      "nome": "BANCO DE DADOS I",
+      "periodo": 5,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103141"
+      ]
+    },
+    {
+      "codigo": "8103152",
+      "nome": "REDES DE COMPUTADORES",
+      "periodo": 5,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103126"
+      ]
+    },
+    {
+      "codigo": "8103155",
+      "nome": "ENGENHARIA DE SOFTWARE APLICADA",
+      "periodo": 5,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103151"
+      ]
+    },
+    {
+      "codigo": "8103215",
+      "nome": "SISTEMAS OPERACIONAIS",
+      "periodo": 5,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103126"
+      ]
+    },
+    {
+      "codigo": "8103149",
+      "nome": "GERENCIA DE PROJETO DE SOFTWARE",
+      "periodo": 6,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103151"
+      ]
+    },
+    {
+      "codigo": "8103153",
+      "nome": "BANCO DE DADOS II",
+      "periodo": 6,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103148"
+      ]
+    },
+    {
+      "codigo": "8103156",
+      "nome": "GERENCIA DE REDES DE COMPUTADORES",
+      "periodo": 6,
+      "ch": 60,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103152"
+      ]
+    },
+    {
+      "codigo": "8103158",
+      "nome": "AVALIACAO DE DESEMPENHO DE SISTEMAS",
+      "periodo": 6,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103147"
+      ]
+    },
+    {
+      "codigo": "8103159",
+      "nome": "INTERFACE COM O USUÁRIO",
+      "periodo": 6,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103151"
+      ]
+    },
+    {
+      "codigo": "8103217",
+      "nome": "GESTÃO DA INF E DE SISTEMAS DE INF",
+      "periodo": 6,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8108109"
+      ]
+    },
+    {
+      "codigo": "8103219",
+      "nome": "PROJETO AVANÇADO DE SOFTWARE I",
+      "periodo": 6,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103155"
+      ]
+    },
+    {
+      "codigo": "8103157",
+      "nome": "INTELIG ARTIFICIAL E SIST ESPECIALISTAS",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103139"
+      ]
+    },
+    {
+      "codigo": "8103160",
+      "nome": "SISTEMAS DE APOIO A GESTÃO",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8108109"
+      ]
+    },
+    {
+      "codigo": "8103161",
+      "nome": "SISTEMAS DISTRIBUIDOS",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103215",
+        "8103152"
+      ]
+    },
+    {
+      "codigo": "8103209",
+      "nome": "AUDITORIA E SEGURANCA DE SISTEMAS",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103152"
+      ]
+    },
+    {
+      "codigo": "8103218",
+      "nome": "DESENVOLVIMENTOS DE SIST CORPORATIVOS",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103148"
+      ]
+    },
+    {
+      "codigo": "8103220",
+      "nome": "GESTÃO DA QUALIDADE DE SOFTWARE",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103151"
+      ]
+    },
+    {
+      "codigo": "8103165",
+      "nome": "T C C SISTEMAS DE INFORMACAO",
+      "periodo": 8,
+      "ch": 60,
+      "tipo": "CO",
+      "prerequisitos": [
+        "8103149"
+      ]
+    },
+    {
+      "codigo": "8103216",
+      "nome": "ESTAGIO SUPERVISIONADO SIST INF",
+      "periodo": 8,
+      "ch": 300,
+      "tipo": "OB",
+      "prerequisitos": [
+        "8103151"
+      ]
+    },
+    {
+      "codigo": "8103172",
+      "nome": "TEORIA DA COMPUTACAO",
+      "periodo": 3,
+      "ch": 60,
+      "tipo": "OP",
+      "prerequisitos": [
+        "8103139"
+      ]
+    },
+    {
+      "codigo": "8105014",
+      "nome": "LINGUA INGLESA I SIST. DA INF.",
+      "periodo": 3,
+      "ch": 60,
+      "tipo": "OP",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8103169",
+      "nome": "MODELAGEM DE DADOS",
+      "periodo": 4,
+      "ch": 60,
+      "tipo": "OP",
+      "prerequisitos": [
+        "8103125"
+      ]
+    },
+    {
+      "codigo": "8103205",
+      "nome": "INTRODUCAO A COMPILADORES",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "OP",
+      "prerequisitos": [
+        "8103215"
+      ]
+    },
+    {
+      "codigo": "8103221",
+      "nome": "PROJETO AVANCADO DE SOFTWARE II",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "OP",
+      "prerequisitos": [
+        "8103219"
+      ]
+    },
+    {
+      "codigo": "8105015",
+      "nome": "LINGUA INGLESA II SIST. DA INF.",
+      "periodo": 7,
+      "ch": 60,
+      "tipo": "OP",
+      "prerequisitos": [
+        "8105014"
+      ]
+    },
+    {
+      "codigo": "8105002",
+      "nome": "PORTUGUES INSTRUMENTAL",
+      "periodo": null,
+      "ch": 60,
+      "tipo": "OP",
+      "prerequisitos": []
+    },
+    {
+      "codigo": "8105031",
+      "nome": "LIBRAS - LÍNGUA BRASILEIRA DE SINAIS",
+      "periodo": null,
+      "ch": 60,
+      "tipo": "OP",
+      "prerequisitos": []
+    }
+  ],
+  "equivalencias": [
+    {
+      "codigo": "8101306",
+      "equivalentes": [
+        "8101107"
+      ]
+    },
+    {
+      "codigo": "8103141",
+      "equivalentes": [
+        "8103137"
+      ]
+    },
+    {
+      "codigo": "8103138",
+      "equivalentes": [
+        "8103180"
+      ]
+    },
+    {
+      "codigo": "8103144",
+      "equivalentes": [
+        "8103135"
+      ]
+    },
+    {
+      "codigo": "8105014",
+      "equivalentes": [
+        "8105003"
+      ]
+    },
+    {
+      "codigo": "8103148",
+      "equivalentes": [
+        "8103174"
+      ]
+    },
+    {
+      "codigo": "8103145",
+      "equivalentes": [
+        "8103166"
+      ]
+    },
+    {
+      "codigo": "8103159",
+      "equivalentes": [
+        "8103223"
+      ]
+    },
+    {
+      "codigo": "8103157",
+      "equivalentes": [
+        "8103181"
+      ]
+    },
+    {
+      "codigo": "8103108",
+      "equivalentes": [
+        "DCET00233"
+      ]
+    }
+  ],
+  "sem_turma": [
+    "8103216",
+    "8103164",
+    "8101164"
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "semestre": "2025.2",
+  "fonte": "SI  Horário 2025.2 (LCC_e_BSI_2025_2.xlsx)",
+  "turmas": [
+    {
+      "codigo": null,
+      "nome": "ANÁLISE DE DADOS",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 7,
+      "professores": [
+        "Marcus Carvalho"
+      ],
+      "salas": [
+        "Laboratório 3"
+      ],
+      "horario": "35M23"
+    },
+    {
+      "codigo": "8101104",
+      "nome": "INTRODUÇÃO A FILOSOFIA",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 2,
+      "professores": [
+        "Theofilo"
+      ],
+      "salas": [
+        "RE 206"
+      ],
+      "horario": "2T1234"
+    },
+    {
+      "codigo": "8101177",
+      "nome": "INTRODUÇÃO À PSICOLOGIA",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 4,
+      "professores": [
+        "Geraldo Alexandre"
+      ],
+      "salas": [
+        "RE 204"
+      ],
+      "horario": "5T1234"
+    },
+    {
+      "codigo": "8103106",
+      "nome": "INTRODUÇÃO AO COMPUTADOR",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 1,
+      "professores": [
+        "Novo professor"
+      ],
+      "salas": [
+        "RE 103"
+      ],
+      "horario": "4M2345"
+    },
+    {
+      "codigo": "8103125",
+      "nome": "LINGUAGEM DE PROGRAMAÇÃO",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 2,
+      "professores": [
+        "Raquel"
+      ],
+      "salas": [
+        "Lab 2"
+      ],
+      "horario": "24M45"
+    },
+    {
+      "codigo": "8103126",
+      "nome": "ARQUITETURA DE COMPUTADORES I",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 2,
+      "professores": [
+        "Augusto"
+      ],
+      "salas": [
+        "RE 206"
+      ],
+      "horario": "3M45 5M23"
+    },
+    {
+      "codigo": "8103138",
+      "nome": "ANÁLISE E PROJETO DE SISTEMAS (POO)",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 3,
+      "professores": [
+        "Rodrigo"
+      ],
+      "salas": [
+        "Lab 1"
+      ],
+      "horario": "2M2345"
+    },
+    {
+      "codigo": "8103139",
+      "nome": "LÓGICA APLICADA À COMPUTAÇÃO",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 2,
+      "professores": [
+        "Thereza Padilha"
+      ],
+      "salas": [
+        "RE 206"
+      ],
+      "horario": "5M45 6M23"
+    },
+    {
+      "codigo": "8103140",
+      "nome": "CÁLCULO DIFERENCIAL E INTEGRAL",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 2,
+      "professores": [
+        "Juliana Aragão"
+      ],
+      "salas": [
+        "RE 206"
+      ],
+      "horario": "24M23"
+    },
+    {
+      "codigo": "8103144",
+      "nome": "ALGEBRA LINEAR",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 3,
+      "professores": [
+        "Surama"
+      ],
+      "salas": [
+        "RE 204"
+      ],
+      "horario": "4M45 4T12"
+    },
+    {
+      "codigo": "8103145",
+      "nome": "PESQUISA APLICADA",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 5,
+      "professores": [
+        "Adriana"
+      ],
+      "salas": [
+        "RA 203"
+      ],
+      "horario": "5M45 5T12"
+    },
+    {
+      "codigo": "8103146",
+      "nome": "ALGORITMOS E ESTRUTURAS DE DADOS II",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 4,
+      "professores": [
+        "Wagner"
+      ],
+      "salas": [
+        "RA 204"
+      ],
+      "horario": "5M2345"
+    },
+    {
+      "codigo": "8103147",
+      "nome": "PROBABILIDADE E ESTATÍSTICA",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 3,
+      "professores": [
+        "Patrícia"
+      ],
+      "salas": [
+        "RE 201"
+      ],
+      "horario": "3T1234"
+    },
+    {
+      "codigo": "8103148",
+      "nome": "BANCO DE DADOS I",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 5,
+      "professores": [
+        "Renata"
+      ],
+      "salas": [
+        "Lab 3",
+        "Laboratório 2"
+      ],
+      "horario": "2M23 4T12"
+    },
+    {
+      "codigo": "8103149",
+      "nome": "GERÊNCIA DE PROJETO DE SOFTWARE",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 6,
+      "professores": [
+        "Sérgio"
+      ],
+      "salas": [
+        "Laboratório 3"
+      ],
+      "horario": "6M2345"
+    },
+    {
+      "codigo": "8103151",
+      "nome": "ENGENHARIA DE SOFTWARE",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 4,
+      "professores": [
+        "Juliana Saraiva"
+      ],
+      "salas": [
+        "Laboratório 2"
+      ],
+      "horario": "6M2345"
+    },
+    {
+      "codigo": "8103152",
+      "nome": "REDES DE COMPUTADORES",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 5,
+      "professores": [
+        "Lucas"
+      ],
+      "salas": [
+        "RE 201"
+      ],
+      "horario": "35M23"
+    },
+    {
+      "codigo": "8103153",
+      "nome": "BANCO DE DADOS II",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 6,
+      "professores": [
+        "Renata Viegas"
+      ],
+      "salas": [
+        "Laboratório 3",
+        "Laboratório 1"
+      ],
+      "horario": "24M45"
+    },
+    {
+      "codigo": "8103154",
+      "nome": "PARADIGMAS DE LINGUAGEM",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 4,
+      "professores": [
+        "Tácito"
+      ],
+      "salas": [
+        "RE 204",
+        "Laboratório 3"
+      ],
+      "horario": "24M23"
+    },
+    {
+      "codigo": "8103156",
+      "nome": "GERÊNCIA DE REDES",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 6,
+      "professores": [
+        "Lucas"
+      ],
+      "salas": [
+        "RE 104"
+      ],
+      "horario": "35T12"
+    },
+    {
+      "codigo": "8103157",
+      "nome": "IA",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 7,
+      "professores": [
+        "Tácito Trindade"
+      ],
+      "salas": [
+        "Laboratório 3"
+      ],
+      "horario": "4M45 2T12"
+    },
+    {
+      "codigo": "8103158",
+      "nome": "AVALIAÇÃO DE DESEMPENHO DE SISTEMAS",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 6,
+      "professores": [
+        "Marcus Carvalho"
+      ],
+      "salas": [
+        "Laboratório 3"
+      ],
+      "horario": "35M45"
+    },
+    {
+      "codigo": "8103159",
+      "nome": "INTERFACE COM O USUÁRIO",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 6,
+      "professores": [
+        "Adson Cunha"
+      ],
+      "salas": [
+        "RA 206"
+      ],
+      "horario": "2M23 4T12"
+    },
+    {
+      "codigo": "8103165",
+      "nome": "TCC",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 8,
+      "professores": [],
+      "salas": [],
+      "horario": "5T34"
+    },
+    {
+      "codigo": "8103169",
+      "nome": "MODELAGEM DE DADOS",
+      "compartilhada": true,
+      "optativa": true,
+      "periodo_grade": 4,
+      "professores": [
+        "Dorgival"
+      ],
+      "salas": [
+        "Laboratório 2"
+      ],
+      "horario": "3M2345"
+    },
+    {
+      "codigo": "8103215",
+      "nome": "SIST. OPERACIONAIS",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 5,
+      "professores": [
+        "Raquel Vigolvino"
+      ],
+      "salas": [
+        "RA 202"
+      ],
+      "horario": "24M23"
+    },
+    {
+      "codigo": "8103216",
+      "nome": "ESTÁGIO SUPERVISIONADO",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 8,
+      "professores": [],
+      "salas": [],
+      "horario": "6T34"
+    },
+    {
+      "codigo": "8103217",
+      "nome": "GESTÃO DA INF E DE SISTEMAS DE INF",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 6,
+      "professores": [
+        "Adriana Clericuzi"
+      ],
+      "salas": [
+        "RE 104"
+      ],
+      "horario": "35M23"
+    },
+    {
+      "codigo": "8103219",
+      "nome": "PROJETO AVANÇADO DE SOFTWARE",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 6,
+      "professores": [
+        "Daniel Faustino"
+      ],
+      "salas": [
+        "Laboratório 1",
+        "Laboratório 2"
+      ],
+      "horario": "4M23 2T12"
+    },
+    {
+      "codigo": "8105002",
+      "nome": "PORTUGUÊS INSTRUMENTAL",
+      "compartilhada": true,
+      "optativa": true,
+      "periodo_grade": 3,
+      "professores": [
+        "Michaella Araújo"
+      ],
+      "salas": [
+        "RE 104"
+      ],
+      "horario": "2T1234"
+    },
+    {
+      "codigo": "8105014",
+      "nome": "INGLÊS",
+      "compartilhada": true,
+      "optativa": true,
+      "periodo_grade": 3,
+      "professores": [
+        "Tatiana"
+      ],
+      "salas": [
+        "RE 103"
+      ],
+      "horario": "5T1234"
+    },
+    {
+      "codigo": "8105031",
+      "nome": "LIBRAS",
+      "compartilhada": true,
+      "optativa": true,
+      "periodo_grade": 3,
+      "professores": [
+        "Carla Pereira"
+      ],
+      "salas": [
+        "RA 106"
+      ],
+      "horario": "2T1234"
+    },
+    {
+      "codigo": "8108109",
+      "nome": "ADMINISTRAÇÃO II",
+      "compartilhada": false,
+      "optativa": false,
+      "periodo_grade": 2,
+      "professores": [
+        "Sérgio Plácido"
+      ],
+      "salas": [
+        "RE 206"
+      ],
+      "horario": "5T1234"
+    },
+    {
+      "codigo": "8108113",
+      "nome": "EMPREENDEDORISMO",
+      "compartilhada": true,
+      "optativa": false,
+      "periodo_grade": 4,
+      "professores": [
+        "Adson"
+      ],
+      "salas": [
+        "RE 206"
+      ],
+      "horario": "24M45"
+    }
+  ]
+}
