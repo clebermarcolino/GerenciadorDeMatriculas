@@ -120,13 +120,13 @@ export default function Planejador({ ctx }: { ctx: Contexto }) {
                     {elegibilidade?.status === "APTA" &&
                       (noCarrinho ? (
                         <button
-                          className="rounded-md bg-red-600 px-3 py-1 text-xs font-medium text-white transition hover:bg-red-700"
+                          className="cursor-pointer rounded-md bg-red-600 px-3 py-1 text-xs font-medium text-white transition hover:bg-red-700"
                           onClick={() => remover(turma)}>
                           Remover
                         </button>
                       ) : (
                         <button
-                          className="rounded bg-gray-900 px-3 py-1 text-xs text-white"
+                          className="cursor-pointer rounded bg-gray-900 px-3 py-1 text-xs text-white"
                           onClick={() => adicionar(turma)}
                         >
                           Adicionar
@@ -153,7 +153,7 @@ export default function Planejador({ ctx }: { ctx: Contexto }) {
                 <span>{t.nome}</span>
                 <span className="font-mono text-xs text-gray-500">{t.horario}</span>
                 <button
-                  className="rounded-md bg-red-600 px-3 py-1 text-xs font-medium text-white transition hover:bg-red-700"
+                  className="cursor-pointer rounded-md bg-red-600 px-3 py-1 text-xs font-medium text-white transition hover:bg-red-700"
                   onClick={() => remover(t)}>
                   Remover
                 </button>

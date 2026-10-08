@@ -4,30 +4,30 @@ interface Props {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   titulo?: string;
   compacto?: boolean;
+  nomeArquivo?: string | null;
+  erro?: string | null;
 }
 
 const PASSOS = [
-  { n: "1", titulo: "Baixe seu histórico", texto: "No SIGAA, emita o Histórico Escolar em PDF." },
+  { n: "1", titulo: "Baixe seu histórico", texto: "No SIGAA, emita o Histórico em PDF." },
   { n: "2", titulo: "Envie o PDF aqui", texto: "Arraste o arquivo ou clique para selecionar." },
-  { n: "3", titulo: "Veja suas opções", texto: "Confira as disciplinas aptas e monte sua grade." },
+  { n: "3", titulo: "Veja suas opções", texto: "Confira as disciplinas aptas e monte sua grade de horários." },
 ];
 
 export default function UploadHistorico({
   onChange,
   titulo = "Gerenciador de Matrículas",
   compacto = false,
+  nomeArquivo = null,
+  erro = null,
 }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [arrastando, setArrastando] = useState(false);
-  const [nomeArquivo, setNomeArquivo] = useState<string | null>(null);
   const [aviso, setAviso] = useState<string | null>(null);
+  const mensagem = aviso ?? erro;
 
   function aoEscolher(e: React.ChangeEvent<HTMLInputElement>) {
-    const f = e.target.files?.[0];
-    if (f) {
-      setNomeArquivo(f.name);
-      setAviso(null);
-    }
+    setAviso(null);
     onChange(e);
   }
 
@@ -37,7 +37,7 @@ export default function UploadHistorico({
     const f = e.dataTransfer.files?.[0];
     if (!f) return;
     if (f.type !== "application/pdf" && !f.name.toLowerCase().endsWith(".pdf")) {
-      setAviso("Esse arquivo não é um PDF. Envie o Histórico Escolar em formato PDF.");
+      setAviso("Esse arquivo não é um PDF. Envie o Histórico em formato PDF.");
       return;
     }
     const input = inputRef.current;
@@ -61,19 +61,27 @@ export default function UploadHistorico({
 
   if (compacto) {
     return (
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-black pb-4">
-        <div className="min-w-0">
-          <h1 className="text-xl font-bold">{titulo}</h1>
-          <p className="truncate text-sm text-gray-600">
-            Histórico carregado{nomeArquivo ? `: ${nomeArquivo}` : ""}
-          </p>
+      <div className="space-y-3 border-b border-black pb-4">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="min-w-0">
+            <h1 className="text-xl font-bold">{titulo}</h1>
+            <p className="truncate text-sm text-gray-600">
+              Histórico carregado{nomeArquivo ? `: ${nomeArquivo}` : ""}
+            </p>
+          </div>
+          <label
+            htmlFor="upload-historico"
+            className="cursor-pointer rounded-md border border-black px-4 py-2 text-sm font-medium transition hover:bg-black hover:text-white focus-within:ring-2 focus-within:ring-black focus-within:ring-offset-2"
+          >
+            Enviar outro histórico
+            {input}
+          </label>
         </div>
-        <label
-          htmlFor="upload-historico"
-          className="cursor-pointer rounded-md border border-black px-4 py-2 text-sm font-medium transition hover:bg-black hover:text-white focus-within:ring-2 focus-within:ring-black focus-within:ring-offset-2">
-          Enviar outro histórico
-          {input}
-        </label>
+        {mensagem && (
+          <p role="alert" className="rounded-md border border-red-600 p-3 text-sm font-medium text-red-600">
+            {mensagem}
+          </p>
+        )}
       </div>
     );
   }
@@ -116,8 +124,7 @@ export default function UploadHistorico({
         onDrop={aoSoltar}
         className={`flex cursor-pointer flex-col items-center gap-3 rounded-xl border-2 border-dashed px-6 py-12 text-center transition focus-within:ring-2 focus-within:ring-black focus-within:ring-offset-2 ${
           arrastando ? "border-black bg-black text-white" : "border-gray-400 bg-white hover:border-black hover:bg-gray-50"
-        }`}
-      >
+        }`}>
         <svg
           aria-hidden="true"
           width="40"
@@ -127,55 +134,31 @@ export default function UploadHistorico({
           stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
-          strokeLinejoin="round"
-        >
+          strokeLinejoin="round">
           <path d="M12 16V4m0 0L8 8m4-4 4 4" />
           <path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" />
         </svg>
         <span className="text-lg font-semibold">
-          {arrastando ? "Solte o arquivo para enviar" : "Arraste seu Histórico Escolar aqui"}
+          {arrastando ? "Solte o arquivo para enviar" : "Arraste seu Histórico aqui"}
         </span>
         <span className="text-sm opacity-70">ou</span>
         <span
           className={`rounded-md px-5 py-2.5 text-sm font-medium ${
             arrastando ? "bg-white text-black" : "bg-black text-white"
-          }`}
-        >
+          }`}>
           Selecionar arquivo PDF
         </span>
-        <span className="text-xs opacity-70">Aceitamos apenas o PDF do Histórico Escolar emitido pelo SIGAA</span>
+        <span className="text-xs opacity-70">Aceitamos apenas o PDF do Histórico emitido pelo SIGAA</span>
         {input}
       </label>
 
-      {aviso && (
-        <p role="alert" className="rounded-md border border-black p-3 text-sm font-medium">
-          {aviso}
+      {mensagem && (
+        <p role="alert" className="rounded-md border border-red-600 p-3 text-sm font-medium text-red-600">
+          {mensagem}
         </p>
       )}
 
-      {/* <p className="flex items-start gap-2 text-sm text-gray-600">
-        <svg
-          aria-hidden="true"
-          className="mt-0.5 shrink-0"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <rect x="4" y="11" width="16" height="10" rx="2" />
-          <path d="M8 11V7a4 4 0 0 1 8 0v4" />
-        </svg>
-        <span>
-          <strong className="font-semibold text-black">Seus dados ficam com você.</strong> O arquivo é lido
-          no seu navegador e não é enviado a nenhum servidor.
-        </span>
-      </p> */}
-
-      <details className="text-sm">1
+      <details className="text-sm">
         <summary className="cursor-pointer font-medium underline-offset-4 hover:underline">
           Onde encontro meu histórico?
         </summary>

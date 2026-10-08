@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import Planejador from "./components/Planejador";
+import { validarHistorico } from "./engine/validacao";
 import { extrairLinhas } from "./engine/pdfText";
 import { parseHistorico, type Historico, type Situacao } from "./engine/historico";
 import UploadHistorico from "./components/UploadHistorico";
@@ -37,20 +38,28 @@ export default function App() {
   const [erro, setErro] = useState<string | null>(null);
   const [filtro, setFiltro] = useState<Situacao | "TODAS">("TODAS");
   const [filtroEleg, setFiltroEleg] = useState<StatusElegibilidade | "TODAS">("APTA");
+  const [nomeArquivo, setNomeArquivo] = useState<string | null>(null);
 
   async function onFile(e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    try {
-      setErro(null);
-      const l = await extrairLinhas(file);
-      setLinhas(l);
-      setHist(parseHistorico(l));
-      setFiltro("TODAS");
-    } catch (err) {
-      setErro(`Não foi possível ler o PDF: ${String(err)}`);
+  const file = e.target.files?.[0];
+  if (!file) return;
+  try {
+    setErro(null);
+    const l = await extrairLinhas(file);
+    const h = parseHistorico(l);
+    const v = validarHistorico(l, h);
+    if (!v.valido) {
+      setErro(v.motivo);
+      return;
     }
+    setLinhas(l);
+    setHist(h);
+    setNomeArquivo(file.name);
+    setFiltro("TODAS");
+  } catch (err) {
+    setErro(`Não foi possível ler o PDF: ${String(err)}`);
   }
+}
 
   const contagem = useMemo(() => {
     const c = new Map<Situacao, number>();
@@ -70,8 +79,7 @@ export default function App() {
 
   return (
     <main className="mx-auto max-w-5xl space-y-6 p-6">
-      <UploadHistorico onChange={onFile} compacto={!!hist} />
-      {erro && <p className="rounded bg-red-50 p-3 text-red-700">{erro}</p>}
+      <UploadHistorico onChange={onFile} compacto={!!hist} nomeArquivo={nomeArquivo} erro={erro} />
       {hist && (
         <>
           <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
