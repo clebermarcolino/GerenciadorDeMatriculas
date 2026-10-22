@@ -131,5 +131,6 @@ export const LINHAS: string[] = [
   "O CRA é o resultado da soma ponderada das médias multiplicadas por suas carga horárias dividido pela carga horária total de todas as disciplinas.",
   "Para esse cálculo serão consideradas Disciplinas, Módulos e Atividades com estado Aprovado, Dispensado, Reprovado e Falta.",
   "CRA = SUM( Média * CH Individual ) / CH Total",
-  "Página 3 de 3"
+  "Página 3 de 3",
+  "Verificar autenticidade em https://sigaa.ufpb.br/sigaa/documentos. Código de verificação: 0000000000"
 ];
