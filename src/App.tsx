@@ -84,7 +84,7 @@ export default function App() {
         <>
           <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
             <Card titulo="Aluno" valor={hist.nome ?? "—"} sub={hist.matricula ?? ""} />
-            <Card titulo="CRA" valor={hist.cra?.toFixed(1) ?? "—"} />
+            <Card titulo="CRA" valor={hist.cra?.toFixed(2) ?? "—"} />
             <Card
               titulo="CH integralizada"
               valor={`${hist.ch_integralizada ?? "—"} / ${hist.ch_exigida ?? "—"}`}
